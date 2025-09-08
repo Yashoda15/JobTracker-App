@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Tracker</h1>
+    <p>Track your job applications and interview progress</p>
+  </header>
+
+  <main>
+    <form id="jobForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="role" placeholder="Role" required />
+      <select id="status">
+        <option value="Applied">Applied</option>
+        <option value="Interviewing">Interviewing</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <button type="submit">Add Job</button>
+    </form>
+
+    <section id="jobList"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
